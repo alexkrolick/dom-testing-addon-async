@@ -1,4 +1,4 @@
-# @dom-testing/addon-async
+# dom-testing-addon-async
 
 Async query addon for dom-testing-library
 
@@ -11,7 +11,7 @@ Fach of the `get` and `getAll` queries from `dom-testing-library` are wrapped in
 The find APIs return a Promise and retry automatically until they time out. The timeout can be specified as an option in the last argument.
 
 ```js
-import { findByLabelText, findByText } from '@dom-testing/addon-async'
+import { findByLabelText, findByText } from 'dom-testing-addon-async'
 
 fireEvent.click(getByRole('log-in'))
 // This element doesn't appear immediately:
