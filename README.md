@@ -1,5 +1,7 @@
 # dom-testing-addon-async
 
+[![Build Status](https://travis-ci.org/alexkrolick/dom-testing-addon-async.svg?branch=master)](https://travis-ci.org/alexkrolick/dom-testing-addon-async)
+
 Async query addon for dom-testing-library
 
 ## Usage
