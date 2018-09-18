@@ -1,6 +1,6 @@
 {
   "name": "dom-testing-addon-async",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Async queries for dom-testing-library",
   "author": "Alex Krolick <alexander.krolick+github@gmail.com>",
   "repository": {
@@ -22,8 +22,8 @@
     "check:lint": "eslint ./src --max-warnings=0 --report-unused-disable-directives",
     "check:flow": "flow check",
     "check:all": "npm-run-all check:lint check:flow test",
-    "build:lib": "BABEL_ENV=es babel src -d lib",
-    "build:dist": "BABEL_ENV=cjs babel src -d dist",
+    "build:lib": "BABEL_ENV=es babel src -d lib --ignore __tests__",
+    "build:dist": "BABEL_ENV=cjs babel src -d dist  --ignore __tests__",
     "build:flow": "cp index.js.flow.template lib/index.js.flow && cp index.js.flow.template dist/index.js.flow",
     "build": "npm-run-all build:lib build:dist build:flow",
     "prepublishOnly": "npm-run-all build",

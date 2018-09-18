@@ -1,0 +1,44 @@
+{
+  "env": {
+    "development": {
+      "presets": [
+        "env",
+        "react-app/dev"
+      ]
+    },
+    "cjs": {
+      "presets": [
+        [
+          "env",
+          {
+            "modules": "commonjs"
+          }
+        ],
+        "react-app/prod"
+      ]
+    },
+    "es": {
+      "presets": [
+        [
+          "env",
+          {
+            "modules": false,
+            "loose": true
+          }
+        ],
+        "react-app/prod"
+      ]
+    },
+    "test": {
+      "presets": [
+        [
+          "env",
+          {
+            "modules": "commonjs"
+          }
+        ],
+        "react-app/prod"
+      ]
+    }
+  }
+}
