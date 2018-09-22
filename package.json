@@ -1,6 +1,6 @@
 {
   "name": "dom-testing-addon-async",
-  "version": "0.1.1",
+  "version": "0.2.0",
   "description": "Async queries for dom-testing-library",
   "author": "Alex Krolick <alexander.krolick+github@gmail.com>",
   "repository": {
