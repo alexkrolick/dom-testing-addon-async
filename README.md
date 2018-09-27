@@ -17,12 +17,17 @@ import { findByLabelText, findByText } from 'dom-testing-addon-async'
 
 const container = document;
 
+// trigger an action
 fireEvent.click(getByRole('log-in'))
+
 // This element doesn't appear immediately:
 const usernameElement = await findByLabelText(container, 'username', {timeout: 200})
+
 usernameElement.value = 'chucknorris'
+
 // wait for error state
 expect(await findByText(container, 'Error: Name must be capitalized')).not.toBeNull()
+
 // expect NOT to see success state
 await expect(findByText(container, 'Everything OK!')).rejects.toMatchInlineSnapshot()
 ```
