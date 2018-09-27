@@ -50,4 +50,4 @@ function waitFor(callback, ...callbackArgs) {
   }
 }
 
-export { waitFor };
+module.exports = { waitFor, default: null };
