@@ -8,7 +8,7 @@ Async query addon for dom-testing-library
 
 ### `find*`
 
-Fach of the `get` and `getAll` queries from `dom-testing-library` are wrapped in an async `find` API.
+Each of the `get` and `getAll` queries from `dom-testing-library` are wrapped in an async `find` API.
 
 The find APIs return a Promise and retry automatically until they time out. The timeout can be specified as an option in the last argument.
 
