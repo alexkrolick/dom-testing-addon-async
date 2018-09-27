@@ -58,7 +58,6 @@ expect(headline).toBeDefined() // do something
 You can add the queries to react-testing-libary's render method as described [here](https://github.com/kentcdodds/react-testing-library#custom-render)
 
 ```diff
-// my-component.test.js
 - import { render, fireEvent } from 'react-testing-library';
 + import { render, fireEvent } from '../test-utils';
 ```
