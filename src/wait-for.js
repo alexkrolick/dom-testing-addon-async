@@ -1,4 +1,4 @@
-const DEFAULT_TIMEOUT = 4500; // milliseconds
+const DEFAULT_TIMEOUT = 3500; // milliseconds
 const POLL_INTERVAL = 10; // milliseconds
 
 async function delay(delayMs) {
